@@ -6,19 +6,16 @@ class FilteredList extends Component {
   constructor(props) {
     super(props);
 
-    // Add a new key/value pair in the state to keep track of type
     this.state = {
       search: "",
-      type: "both", // Default to "all" to show all types initially
+      type: "both", 
     };
   }
 
-  // Sets the state whenever the user types on the search bar
   onSearch = (event) => {
     this.setState({ search: event.target.value.trim().toLowerCase() });
   };
 
-  // Checks if the current item satisfies both the search and type conditions
   filterItem = (item) => {
     const nameMatchesSearch = item.name.toLowerCase().search(this.state.search) !== -1;
     const typeMatchesFilter = this.state.type === "both" || item.type.toLowerCase() === this.state.type;
@@ -26,7 +23,6 @@ class FilteredList extends Component {
     return nameMatchesSearch && typeMatchesFilter;
   };
 
-  // Event handling method for when an item in the dropdown is selected
   handleTypeSelect = (eventKey) => {
     this.setState({ type: eventKey });
   };

@@ -22,10 +22,6 @@ import './App.css'; import FilteredList from
 class App extends Component { render() { 
  return ( 
  <div className="App"> 
- {/* 
- The list of produce will be passed into the FilteredList 
-component the items property. 
- */}
  <FilteredList items={produce} />
  </div>
  ); 

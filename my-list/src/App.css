@@ -41,57 +41,47 @@
   color: #888;
 }
 
-/* App.css */
-
-/* Style for the filter-list container */
 .filter-list {
   max-width: 600px;
   margin: auto;
   padding: 20px;
 }
 
-/* Style for the heading */
 .filter-list h1 {
   font-size: 30px;
   margin-bottom: 20px;
   padding: 10px;
   border-radius: 20px; 
-  background-color: #1e0ce8; /* Red color for fruits */
+  background-color: #1e0ce8; 
 }
 
-/* Style for the dropdown */
 .filter-list .btn-group {
   margin-right: 10px;
  
 }
 
-/* Style for the search input */
 .filter-list input[type="text"] {
   font-size: 16px;
   padding: 8px;
   margin-bottom: 10px;
 }
 
-/* Style for the list */
 .filter-list ul {
   list-style: none;
   padding: 0;
 }
 
-/* Style for list items */
 .filter-list li {
   padding: 10px;
   margin-bottom: 5px;
   border-radius: 5px;
 }
 
-/* Style for vegetables */
 .filter-list li[data-type="Vegetable"] {
-  background-color: #0bbf14; /* Green color for vegetables */
+  background-color: #0bbf14; 
 }
 
-/* Style for fruits */
 .filter-list li[data-type="Fruit"] {
-  background-color: #e8170c; /* Red color for fruits */
+  background-color: #e8170c; 
 }
 
